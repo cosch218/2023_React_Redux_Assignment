@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6, a, input, button {
+  font-weight: 400;
+  color: #272727;
+  font-family: 'SUITE-Regular';
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+}
+
+
+
+/* pages - Home.jsx */
+.main {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 768px;
+  height: 90vh;
+  background-color: rgba(255,255,255,0.2);
+  box-shadow: 0px 10px 30px rgba(255,255,255,0.5);
+  box-sizing: border-box;
+  padding: 50px 20px;
+}
+
+.main_title {
+  margin: 50px 0;
+  font-size: 2.5rem;
+}
+
+
+
+/* components - NavBarComp.jsx */
+.navbar {
+  background-color: rgba(183, 186, 217, 0.7);
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.navbar a.active {
+  color: rgb(93, 78, 175);
+  font-weight: 500;
+}
+
+
+/* components - MemoComp.jsx, LikeComp.jsx */
+.contentbox {
+  height: 700px;
+  box-sizing: border-box;
+  padding: 20px 0;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.contentbox::-webkit-scrollbar {
+  display: none;
+}
+
+.memobox {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.memobox .memocontent {
+  width: 728px;
+}
